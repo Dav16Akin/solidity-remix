@@ -1,0 +1,51 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/poll.sol": "Test"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/poll.sol": {
+			"keccak256": "0xdf23ca10420bbde160acf4f4e70498f263a860ef71f989ce94729d6939d380ad",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://30b1f48794b85fa67dc68216077dbb7ae9fe12bc528dbdd4cfe1553b4d85f5cb",
+				"dweb:/ipfs/QmWncf8VBzoPkb2BHXku8azoA6NhaB4d4NBxt8HXyQiz5C"
+			]
+		}
+	},
+	"version": 1
+}
