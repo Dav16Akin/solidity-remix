@@ -9,6 +9,19 @@
 				"inputs": [],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -24,7 +37,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/poll.sol": "Test"
+			"contracts/test.sol": "Test"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -38,12 +51,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/poll.sol": {
-			"keccak256": "0xdf23ca10420bbde160acf4f4e70498f263a860ef71f989ce94729d6939d380ad",
+		"contracts/test.sol": {
+			"keccak256": "0x966963a6049c82bdbc875c976d26ca87dba86c783c6c53085e5c3d0cf41086bb",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://30b1f48794b85fa67dc68216077dbb7ae9fe12bc528dbdd4cfe1553b4d85f5cb",
-				"dweb:/ipfs/QmWncf8VBzoPkb2BHXku8azoA6NhaB4d4NBxt8HXyQiz5C"
+				"bzz-raw://db9de9bb37437aeb77b6cd74c0add659cb47dbf6a2c9ce04792e776863a8230d",
+				"dweb:/ipfs/QmZwDqHjaVp6KGEjN8j6PSoCtA7N2zdRdXkdV9YST8ooKe"
 			]
 		}
 	},
