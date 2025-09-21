@@ -7,7 +7,7 @@ contract PollContract {
         string question;
         string thumbnail;
         uint64[] votes;
-        bytes32[] options;
+        string[] options;
     }
 
     struct Voter {
@@ -24,7 +24,7 @@ contract PollContract {
     function createPoll(
         string memory _question,
         string memory _thumb,
-        bytes32[] memory _options
+        string[] memory _options
     ) public {
         require(bytes(_question).length > 0, "Empty question");
         require(_options.length > 1, "At least 2 options required");
@@ -54,7 +54,7 @@ contract PollContract {
             string memory,
             string memory,
             uint64[] memory,
-            bytes32[] memory
+            string[] memory
         )
     {
         require(_pollId < polls.length && _pollId >= 0, "Poll does not exist");
@@ -69,12 +69,13 @@ contract PollContract {
 
 
     function vote(uint256 _pollId, uint64 _vote) external {  
-        require(_pollId < polls.length && _pollId >= 0, "Poll does not exist");
+        require(_pollId < polls.length , "Poll does not exist");
         require(_vote < polls[_pollId].options.length , "Invalid vote");
         require(voters[msg.sender].votedMap[_pollId] == false, "You already vote");
 
         polls[_pollId].votes[_vote] += 1;
 
+        voters[msg.sender].id = msg.sender; 
         voters[msg.sender].votedIds.push(_pollId);
         voters[msg.sender].votedMap[_pollId] = true;
     }
